@@ -1,3 +1,5 @@
+'use strict'
+
 angular.module('dummPortfolio.config').config [
     '$stateProvider'
     '$urlRouterProvider'

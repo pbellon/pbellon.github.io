@@ -1,3 +1,5 @@
+'use strict'
+
 class ProjectDetailCtrl
     @$inject: ['$scope', 'project']
     constructor: (@scope, project)->

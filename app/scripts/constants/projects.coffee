@@ -9,7 +9,7 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             """
             description: """
             """
-            github: "https://github.com/jplusplus/detective.io/"
+            github: 'https://github.com/jplusplus/detective.io/'
         },
         {
             id: 2
@@ -20,16 +20,16 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             """
             description: """
             """
-            github: "https://github.com/okfn/spendingstories/"
+            github: 'https://github.com/okfn/spendingstories/'
         },
         {
             id: 3
             title: 'Arte: World of Work'
-            link: "http://europe.arte.tv/fr/evenements/world-of-work/"
+            link: 'http://europe.arte.tv/fr/evenements/world-of-work/'
             short_description: """
             """
             description: """
             """
-            github: "https://github.com/jplusplus/arte-world-of-work/"
+            github: 'https://github.com/jplusplus/arte-world-of-work/'
         }
     ]

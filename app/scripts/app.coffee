@@ -1,3 +1,5 @@
+'use strict';
+
 # declaration of other app module
 angular.module('dummPortfolio.constants', [])
 angular.module('dummPortfolio.config', ['ui.router'])
@@ -15,3 +17,7 @@ neuPortfolio = angular.module('dummPortfolio', [
     'restangular'
     'ui.router'
   ])
+
+#= require_tree constants/
+#= require_tree config/
+#= require_tree controller/

@@ -1,3 +1,5 @@
+'use strict'
+
 class HomeCtrl
     constructor: ($scope)->
         $scope.hello = 'world'

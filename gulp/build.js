@@ -21,14 +21,11 @@ gulp.task('styles', function () {
     .pipe($.size());
 });
 
-gulp.task('coffee', function() {
-    gulp.src('src/**/*.coffee')
-      .pipe($.coffee({bare: true}).on('error', gutil.log) )
-      .pipe(gulp.dest('app/scripts/'));
-});
-
 gulp.task('scripts', function () {
-  return gulp.src('app/scripts/**/*.js')
+  return gulp.src('app/scripts/app.coffee')
+    .pipe($.include())
+    .pipe($.coffee())
+    .pipe(gulp.dest('.tmp/js/'))
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe($.size());
