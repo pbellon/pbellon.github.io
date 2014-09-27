@@ -4,7 +4,7 @@
     <div class="row">
         <div class='col-sm-4' ng-repeat="project in projects.all()">
             <h4><a ui-sref="projects.detail({id: project.id})">{{ project.title }}</a></h4>
-            <p> {{ project.short_description }}</p>
+            <h5> {{ project.subtitle }}</h5>
         </div>
     </div>
 </div>

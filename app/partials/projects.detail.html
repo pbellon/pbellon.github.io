@@ -1,5 +1,12 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container">
     <a ui-sref="projects.list">Go back to projects</a>
-    <h1>{{ project.current.title }}</h1>
+
+    <div class='centered-photo' ng-if="project.current.picture">
+        <a ng-href='{{ project.current.link }}' target='_blank'
+           title='{{ project.current.title }}'>
+            <img ng-src='{{ project.current.picture }}'/>
+        </a>
+    </div>
+    <h1>{{ project.current.title }} <small>{{ project.current.subtitle }}</small></h1>
 </div>
