@@ -1,8 +1,4 @@
-'use strict'
-
 class ProjectsCtrl
-    @$inject: ['projects']
-
     constructor: (PROJECTS)->
         @list = PROJECTS
 
@@ -11,6 +7,7 @@ class ProjectsCtrl
     count: =>
         @all().length
 
+    @$inject: ['projects']
 
 
 

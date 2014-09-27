@@ -3,33 +3,28 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
         {
             id: 1
             title: 'Detective.io'
-            link: 'https://detective.io'
-            short_description: """
-            Detective description
-            """
-            description: """
-            """
+            link: 'https://www.detective.io'
+            picture: 'images/screenshots/detective-io.png'
+            subtitle: 'Structure your investigations'
+            description: ''
             github: 'https://github.com/jplusplus/detective.io/'
         },
         {
             id: 2
             title: 'SpendingStories'
-            link: 'https://spendingstories.org'
-            short_description: """
-            SpendingStories description
-            """
-            description: """
-            """
+            picture: 'images/screenshots/spendingstories.png'
+            link: 'http://spendingstories.org'
+            subtitle: 'Give meaning to big figures'
+            description: ''
             github: 'https://github.com/okfn/spendingstories/'
         },
         {
             id: 3
             title: 'Arte: World of Work'
+            picture: 'images/screenshots/detective-io.png'
             link: 'http://europe.arte.tv/fr/evenements/world-of-work/'
-            short_description: """
-            """
-            description: """
-            """
+            subtitle: 'A study of the world of work'
+            description: ''
             github: 'https://github.com/jplusplus/arte-world-of-work/'
         }
     ]

@@ -1,3 +1,4 @@
+### global _:false ###
 'use strict';
 
 # declaration of other app module

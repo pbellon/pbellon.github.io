@@ -1,5 +1,3 @@
-'use strict'
-
 class ContactCtrl
     constructor: ($scope)->
         @scope = $scope
