@@ -3,22 +3,29 @@
         font-size: 15px;
     }
     &__screenshot {
-        padding-top: 20px;
+        margin-top: 20px;
         img {
             margin: auto;
             width: auto !important;
             max-width:  360px;
-            max-height: 300px;
         }
     }
+}
+
+.thumbnail {
+    padding: 0;
 }
 
 .projects {
     &__list {
         &__item {
+            min-width: 390px;
+
             &__thumbnail {
+                max-width: 360px;
+                height: 186px;
                 overflow: hidden;
-                height: 190px;
+                margin-bottom: 5px;
             }
             .tag-list {
                 margin-top: 5px;

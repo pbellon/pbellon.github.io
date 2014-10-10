@@ -1,12 +1,30 @@
 <div ng-include src="'partials/nav.html'"></div>
-<div class="container">
-    <a ui-sref="projects.list">Go back to projects</a>
+<div class="container project">
+    <a ui-sref="projects.list"><i class='fa fa-arrow-left'></i> Go back to projects</a>
+    <div class="row">
+        <div class='project__screenshot thumbnail col-sm-4' ng-if="project.current.picture">
+            <a ng-href='{{ project.current.link }}' target='_blank'
+               title='See {{ project.current.title }} website'>
+                <img ng-src='{{ project.current.picture }}'/>
+            </a>
+        </div>
+        <div class="project__details col-sm-8">
+            <h1>
+                <a ng-if="project.current.github"
+                   ng-href="{{ project.current.github }}"
+                   target="_blank"
+                   title="See {{ project.current.title }} github">
+                    <i class="fa fa-github"></i>
+                </a>
 
-    <div class='centered-photo' ng-if="project.current.picture">
-        <a ng-href='{{ project.current.link }}' target='_blank'
-           title='{{ project.current.title }}'>
-            <img ng-src='{{ project.current.picture }}'/>
-        </a>
+                {{ project.current.title }}
+
+            </h1>
+
+            <h2>{{ project.current.subtitle }}</h2>
+
+            <div class="project__description" btf-markdown="project.current.description"></div>
+        </div>
     </div>
-    <h1>{{ project.current.title }} <small>{{ project.current.subtitle }}</small></h1>
+
 </div>

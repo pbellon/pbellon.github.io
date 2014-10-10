@@ -17,6 +17,7 @@ neuPortfolio = angular.module('dummPortfolio', [
     'ngSanitize'
     'restangular'
     'ui.router'
+    'btford.markdown'
   ])
 
 #= require_tree constants/

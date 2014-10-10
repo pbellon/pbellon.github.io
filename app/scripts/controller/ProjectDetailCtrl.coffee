@@ -1,7 +1,10 @@
 class ProjectDetailCtrl
-    constructor: (@scope, project)->
+    constructor: (@scope, @state, project)->
         @current = project
 
-    @$inject: ['$scope', 'project']
+    searchTag: (tag)->
+        @state.go 'projects.list', {tags:tag}
+
+    @$inject: ['$scope', '$state', 'project']
 
 angular.module('dummPortfolio.controller').controller 'ProjectDetailCtrl', ProjectDetailCtrl

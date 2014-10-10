@@ -1,8 +1,7 @@
 angular.module('dummPortfolio.config').config [
     '$stateProvider'
     '$urlRouterProvider'
-    '$locationProvider'
-    ($stateProvider, $urlRouterProvider, $locationProvider)->
+    ($stateProvider, $urlRouterProvider)->
         $stateProvider.state('home',
             url: '/home'
             templateUrl: 'partials/home.html'
@@ -18,14 +17,20 @@ angular.module('dummPortfolio.config').config [
             url: '/projects'
             abstract: true
             resolve:
+                tags: ['$stateParams', (params)->
+                    if params.tags
+                        return params.tags.split(',')
+                    else
+                        return []
+                ]
                 projects: ['constants.projects', (PROJECTS)->
                     PROJECTS.all
                 ]
         )
         .state('projects.list'
-            url: ''
+            url: '?tags'
             templateUrl: 'partials/projects.list.html'
-            controller: 'ProjectsCtrl as projects'
+            controller: 'ProjectListCtrl as projects'
         )
         .state('projects.detail'
             url: '/:id'
