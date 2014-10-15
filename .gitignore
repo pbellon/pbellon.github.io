@@ -4,4 +4,4 @@ node_modules
 app/bower_components
 .editorconfig
 *sublime-*
-!.gitignore
+dist
