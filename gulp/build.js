@@ -33,16 +33,8 @@ gulp.task('scripts', function () {
 
 gulp.task('partials', function () {
   return gulp.src('app/partials/**/*.html')
-    .pipe($.minifyHtml({
-      empty: true,
-      spare: true,
-      quotes: true
-    }))
-    .pipe($.ngHtml2js({
-      moduleName: 'neuNeuPortfolio',
-      prefix: 'partials/'
-    }))
     .pipe(gulp.dest('.tmp/partials'))
+    .pipe(gulp.dest('dist/partials'))
     .pipe($.size());
 });
 
@@ -52,12 +44,6 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function () {
   var assets;
 
   return gulp.src('app/*.html')
-    .pipe($.inject(gulp.src('.tmp/partials/**/*.js'), {
-      read: false,
-      starttag: '<!-- inject:partials -->',
-      addRootSlash: false,
-      addPrefix: '../'
-    }))
     .pipe(assets = $.useref.assets())
     .pipe($.rev())
     .pipe(jsFilter)
