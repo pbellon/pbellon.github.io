@@ -12,7 +12,7 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             Its power lies in data creation for users thanks
             to an advanced interface designed to easily connect related data.
             '''
-            tags: ['AngularJS', 'Django', 'Neo4j']
+            tags: [ 'Data Driven Journalism']
             github: 'https://github.com/jplusplus/detective.io/'
         },
         {
@@ -34,7 +34,7 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             '''
 
             github: 'https://github.com/okfn/spendingstories/'
-            tags: ['AngularJS', 'Django', 'D3.js']
+            tags: ['Data Driven Journalism', 'Visualization']
         },
         {
             id: 3
@@ -43,9 +43,16 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             thumbnail: 'images/screenshots/arte-wow.thumb.png'
             link: 'http://europe.arte.tv/fr/evenements/world-of-work/'
             subtitle: 'A study of the world of work'
-            description: ''
+            description: '''
+            *Do you have to job you dreamt when you were young?*, *Could you
+            do a non-paid internship?*. This project is a study about the
+            pereception in Europe of the world of work.
+
+            Build with sociologues, this little application want to inform
+            people of some world of work's fact around a survey.
+            '''
             github: 'https://github.com/jplusplus/arte-world-of-work/'
-            tags: ['AngularJS', 'Django']
+            tags: [ 'Data Driven Journalism', ]
         }
         {
             id: 4
@@ -67,7 +74,27 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             [d3]: http://d3js.org/
             '''
             github: 'https://github.com/jplusplus/arte-world-of-work/'
-            tags: ['AngularJS', 'D3.js']
+            tags: [ 'Visualization', ]
         }
+        {
+            id: 5
+            title: 'Jeu d\'influences - France5'
+            picture: 'images/screenshots/jeu_d_influences.png'
+            thumbnail: 'images/screenshots/jeu_d_influences.thumb.png'
+            link: 'http://jeu-d-'
+            subtitle: 'Could you handle the crysis?'
+            description: '''
+            This serious game put you at the head of Habinat, a leader of construction.
+            One of your employee is found dead, by suicide and you now have to handle
+            the crysis in front of the media.
+
+            <i class="fa fa-trophy"></i> Best crossmedia piece at [Liege Web Festival - 2014][LWF]
+            [LWF]: http://liegewebfest.be/
+
+            '''
+            github: 'https://github.com/jplusplus/arte-world-of-work/'
+            tags: [ 'Serious Game', ]
+        }
+
 
     ]

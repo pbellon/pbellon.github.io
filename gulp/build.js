@@ -13,7 +13,7 @@ function handleError(err) {
 }
 
 gulp.task('styles', function () {
-  return gulp.src('app/styles/*.less')
+  return gulp.src('app/styles/main.less')
     .pipe($.less())
     .on('error', handleError)
     .pipe($.autoprefixer('last 1 version'))

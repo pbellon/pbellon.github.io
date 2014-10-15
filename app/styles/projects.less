@@ -1,4 +1,7 @@
 .project {
+    .subtitle {
+        margin-top: -20px;
+    }
     &__description {
         font-size: 15px;
     }
@@ -28,14 +31,27 @@
                 margin-bottom: 5px;
             }
             .tag-list {
+                max-width: 360px;
                 margin-top: 5px;
                 &:after {
                     clear: both;
                 }
             }
         }
-
+        @media (min-width: 990px) and (max-width:1200px){
+            width: 78p0x;
+            margin: auto;
+            float: none;
+        }
+        @media (max-width: 990px){
+            width: auto;
+            &__item {
+                margin: auto;
+                float: none;
+            }
+        }
     }
+
     .tag-list {
         &--selected {
             &__item {

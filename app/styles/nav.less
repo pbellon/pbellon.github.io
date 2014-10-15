@@ -3,9 +3,13 @@ nav.navbar {
         border: 0;
 
     }
+
+
     .navbar-nav {
         border-bottom: 0px;
+
         li {
+            font-size: ceil((@font-size-base * 1.3));
             &:first-child {
                 padding-left: 0;
             }
@@ -13,10 +17,13 @@ nav.navbar {
             &.active {
                 text-decoration: underline;
             }
+            @media (max-width: 768px){
+                padding: 0;
+            }
+
         }
     }
     .socials {
-        &:after { clear: both; }
         font-size: 20px;
     }
 }
