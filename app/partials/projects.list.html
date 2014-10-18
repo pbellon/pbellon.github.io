@@ -1,13 +1,13 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container projects">
-    <p class="lead">
-        As a developer at <a href="http://jplusplus.org">Journalism++</a> I work
+    <p>
+        As a developer at <a href="http://jplusplus.org">Journalism++</a> I worked
         on many data-driven journalism projects. It made me realise the key role
         of data in our world and the importance of using it to tell engaging
         stories.
     </p>
 
-    <p class="lead">
+    <p>
         Here are some projects I proudly took part in.
     </p>
     <div class="row">
@@ -19,10 +19,10 @@
         <div class="projects__list">
             <div class='col-sm-4 projects__list__item'
                  ng-repeat="project in projects.filteredProjects()">
-                <h3>
+                <h5>
                     <a ui-sref="projects.detail({id: project.id})">{{ project.title }}</a>
-                </h3>
-                <h5>{{ project.subtitle }}</h5>
+                </h5>
+                <h6>{{ project.subtitle }}</h6>
 
                 <div class="projects__list__item__thumbnail thumbnail">
                     <a ui-sref="projects.detail({id: project.id})">

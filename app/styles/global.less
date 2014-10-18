@@ -4,7 +4,9 @@
   color: #000;
   padding: 0.2em 0;
 }
-
+p {
+    font-size: 17px;
+}
 .container {
     .centered-photo {
         width: 100%;
@@ -27,11 +29,12 @@
     }
 }
 .list-item-with-icon {
+    @font-size: @font-size-base - 2px;
     i {
         display: inline-block;
-        min-width: 22px;
-        font-size: 18px;
+        min-width: @font-size + 4px;
+        font-size: @font-size;
     }
-    font-size: 18px;
+    font-size: @font-size;
     margin-bottom: 5px;
 }
