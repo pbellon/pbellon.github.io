@@ -1,6 +1,5 @@
 class ContactCtrl
-    constructor: ($scope)->
-        @scope = $scope
+    constructor: ->
         @email = 'mailto:bellon.pierre@gmail.com'
 
 

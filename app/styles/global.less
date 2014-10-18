@@ -15,3 +15,23 @@
         }
     }
 }
+.list-centered {
+    width: auto;
+    text-align: center;
+    li {
+        display: inline;
+        &:after {
+            content: "\A";
+            white-space: pre;
+        }
+    }
+}
+.list-item-with-icon {
+    i {
+        display: inline-block;
+        min-width: 22px;
+        font-size: 18px;
+    }
+    font-size: 18px;
+    margin-bottom: 5px;
+}

@@ -1,10 +1,25 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container">
-    <h1>Contact</h1>
-    <p>
-        I'm available for hire. If you want other informations or to set up an
-        interview please let be know by <a ng-href="{{ email }}">mail</a>
-    </p>
+    <h1>Say hello!</h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <p class="lead">
+                I'm currently looking some new projects to took part in.<br/><br/>I'm particuraly
+                interested in projects that meet one or more of the following aspects/topics.
+            </p>
+            <p class="lead">
+                Let me know by <a ng-href="{{ contact.email }}">email</a> if you want me to work
+                at your side or if you have a project to realise.
+            </p>
+        </div>
+        <ul class="list-unstyled col-sm-6">
+            <li class="list-item-with-icon"><i class="ion-pull-request"></i> Open Source</li>
+            <li class="list-item-with-icon"><i class="ion-ios7-people"></i> Of Public Interest</li>
+            <li class="list-item-with-icon"><i class="ion-android-developer"></i> Data Driven Journalism</li>
+            <li class="list-item-with-icon"><i class="fa fa-pie-chart"></i> Data Visualization</li>
+
+        </ul>
+    </div>
 </div>
 <div ng-include src="'partials/footer.html'"></div>
 

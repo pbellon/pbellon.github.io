@@ -10,7 +10,7 @@ angular.module('dummPortfolio.config').config [
         .state('contact'
             url: '/contact'
             templateUrl: 'partials/contact.html'
-            controller: 'ContactCtrl'
+            controller: 'ContactCtrl as contact'
         )
         .state('projects'
             template: '<div ui-view></div>'
