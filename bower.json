@@ -7,7 +7,6 @@
     "underscore": "1.7.0",
     "modernizr" : "2.8.x",
     "jquery" : "1.x.x",
-    "components-font-awesome":"4.2.0",
     "angular-animate" : "1.2.x",
     "angular-cookies" : "1.2.x",
     "angular-touch" : "1.2.x",
