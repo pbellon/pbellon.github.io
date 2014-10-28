@@ -7,6 +7,10 @@
 p {
     font-size: 17px;
 }
+.thumb-icon {
+    font-size: 22px;
+    margin-right: 5px;
+}
 .container {
     .centered-photo {
         width: 100%;
@@ -44,4 +48,12 @@ p {
     font-size: 12px;
     padding: 2px;
     padding-left: 5px;
+}
+
+
+.bg-gradient(@from, @to) {
+    background: -webkit-linear-gradient(left 0%,     @from, @to); /*Safari 5.1-6*/
+    background:      -o-linear-gradient(right,    @from, @to); /*Opera 11.1-12*/
+    background:    -moz-linear-gradient(right,    @from, @to); /*Fx 3.6-15*/
+    background:         linear-gradient(to right, @from, @to);
 }

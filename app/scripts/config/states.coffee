@@ -40,5 +40,10 @@ angular.module('dummPortfolio.config').config [
                 project: (projects, $stateParams)->
                     _.findWhere(projects, id: parseInt $stateParams.id)
         )
+        .state('resume',
+            url: '/resume'
+            controller: 'ResumeCtrl'
+            templateUrl: 'partials/resume.html'
+        )
         $urlRouterProvider.otherwise('/home')
 ]
