@@ -44,10 +44,11 @@ angular.module('dummPortfolio.constants').constant 'constants.resume',
             years: [2011, 2012]
             duration: '1 year'
             description: '''
-            MeetOnExhibitions provides a solution for exhibitors organizer to easily generate mobile
+            MeetOnExhibitions provides a solution for exhibition organizers to easily generate mobile
             applications for their events thanks to a RubyOnRails website. I took part as the main developer of
-            the Android & BlackBerry platforms. This experience allowed me to dive into a MVC web framework with a
-            Test Driven Development approach and made me discover and use the powerness of Design Patterns.
+            the Android & BlackBerry platforms. This experience made me dive for the first time into a web MVC framework using a
+            Test Driven Development approach. It also made me discover and use the powerness of Design Patterns for creating
+            reliable and efficient software architectures.
             '''
         ,
             company: 'Kasual Business'
@@ -57,8 +58,8 @@ angular.module('dummPortfolio.constants').constant 'constants.resume',
             description: '''
             I joined Kasual Business mobile development team during an internship to work on a wine bottle matching
             application called *Smart Bordeaux*. I was in charge of the localization and geolocation features of this application.
-            This experience made me confront to multi-platform and multi-languages issues on software engineering and how
-            to use external APIs thanks to HTTP.
+            This was my first mobile development experience, it made me aware of multi-platform and multi-languages software
+            engineering issues.
             '''
         ,
             company: 'SQLI'
@@ -66,8 +67,8 @@ angular.module('dummPortfolio.constants').constant 'constants.resume',
             years: [2009]
             duration: '3 months'
             description: '''
-            My job was to add features to the open source ClickHeat's ergonomic analysis tool, inspired from eye-tracking.
-            I was charged to improve the kind of data captured on a click and visualize them. It was my first
+            My job was to add features to an open source ergonomic analysis tool called *ClickHeat*.
+            I was charged to improve the kind of data captured on a user click and visualize them. It was my first
             professional experience. It made me discover the basis of web development using PHP and MySQL
             combined with jQuery to create dynamic websites.
             '''
