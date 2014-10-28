@@ -119,5 +119,28 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             '''
             github: 'https://github.com/jplusplus/arte-world-of-work/'
             tags: [ 'Visualization', ]
+        },
+        {
+            id: 7
+            title: 'githubers-audience.py'
+            picture: 'images/screenshots/githubers-audience.png'
+            thumbnail: 'images/screenshots/githubers-audience.thumb.png'
+            link: 'http://pbellon.github.io/tractatus-tree/'
+            subtitle: 'What is your GitHub\'s profile audience ?'
+            description: '''
+            This project is a small Python script wrote during the writing of my
+            memoire called *Is it relevant for a journalistic company to run an open-source project?*.
+            Its purpose is to navigate around every repository of one or many given githubers to
+            analyse their audience in the developer community.
+
+            The main goal was to show that running projects in open-source could create new ways of engaging its users and create links in
+            the developer community.
+
+            Side chart is available on [google spreedsheet][chart].
+
+            [chart]: https://docs.google.com/spreadsheets/d/1gdxK9hJG9go52RKZxplKyi1aAlKrxKqVFU6w8yXZx5s/pubchart?oid=42127376&format=interactive
+            '''
+            github: 'https://github.com/jplusplus/arte-world-of-work/'
+            tags: [ 'Visualization', ]
         }
     ]
