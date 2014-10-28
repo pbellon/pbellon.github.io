@@ -86,6 +86,20 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
         },
         {
             id: 5
+            title: 'Datawrapper'
+            picture: 'images/screenshots/datawrapper.png'
+            thumbnail: 'images/screenshots/datawrapper.thumb.png'
+            link: 'https://datawrapper.de/'
+            subtitle: 'Data-visualization made easy'
+            description: '''
+            DataWrapper is a tool that allow you to easily create data-visualization
+
+            '''
+            github: 'https://github.com/datawrapper/datawrapper'
+            tags: [ 'Visualization', ]
+        },
+        {
+            id: 6
             title: 'Tractatus Tree'
             picture: 'images/screenshots/tractatus-tree.png'
             thumbnail: 'images/screenshots/tractatus-tree.thumb.png'
@@ -106,6 +120,4 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             github: 'https://github.com/jplusplus/arte-world-of-work/'
             tags: [ 'Visualization', ]
         }
-
-
     ]
