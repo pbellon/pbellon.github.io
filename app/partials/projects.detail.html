@@ -1,33 +1,33 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container project">
-    <a ui-sref="projects.list"><i class='fa fa-arrow-left'></i> Go back to projects</a>
+    <a ui-sref="projects.list"><i class='fa fa-arrow-left'></i> {{ 'TEMPLATES.PROJECTS.DETAIL.GO_BACK_TO_PROJECTS' | translate }}</a>
     <div class="row">
         <div class="project__details col-sm-6">
             <h1>
                 <a ng-href='{{ project.current.link }}' target='_blank' rel="nofollow"
-                   title='See {{ project.current.title }} website'>{{ project.current.title }}</a>
+                   ng-attr-title='{{ seeWebsite }}' translate>{{ project.current.title() }}</a>
             </h1>
             <h1 class="subtitle">
-                <small>{{ project.current.subtitle }}</small>
+                <small translate>{{ project.current.subtitle() }}</small>
             </h1>
 
 
-            <div class="project__description" btf-markdown="project.current.description"></div>
+            <div class="project__description" btf-markdown="project.current.description() | translate"></div>
 
             <div class="project__footer">
                 <a ng-if="project.current.github"
                      ng-href="{{ project.current.github }}"
                      target="_blank"
                      rel="nofollow"
-                     title="See {{ project.current.title }} github">
-                     Project's Github
+                     ng-attr-title="{{ seeWebsite }}">
+                     {{ 'TEMPLATES.PROJECTS.DETAIL.PROJECT_GITHUB' | translate }}
                </a>
             </div>
         </div>
 
         <div class='project__screenshot thumbnail col-sm-5 col-sm-push-1' ng-if="project.current.picture">
             <a ng-href='{{ project.current.link }}' target='_blank'
-               title='See {{ project.current.title }} website'>
+               ng-attr-title="{{ 'TEMPLATES.PROJECTS.DETAIL.SEE_WEBSITE' | translate:'{title: (project.current.title()|translate)}' }}">
                 <img ng-src='{{ project.current.picture }}'/>
             </a>
         </div>
