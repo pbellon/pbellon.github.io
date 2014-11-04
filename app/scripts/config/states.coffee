@@ -23,8 +23,8 @@ angular.module('dummPortfolio.config').config [
                     else
                         return []
                 ]
-                projects: ['constants.projects', (PROJECTS)->
-                    PROJECTS.all
+                projects: ['services.projectWrapper', (wrapper)->
+                    do wrapper.wrapList
                 ]
         )
         .state('projects.list'
