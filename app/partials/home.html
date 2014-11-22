@@ -2,11 +2,10 @@
 <div class="container">
   <div class='profile-photo centered-photo'></div>
   <div class="text-center">
-    <h1>Hey, my name is Pierre Bellon, I'm a web engineer</h1>
-    <p class="lead">
-      I love to craft data-driven tools and websites. I'm confortable with building RESTful API architectures and advanced user interfaces on <a ui-sref="projects.list" href="index.html#/projects">meaningful projects</a>.
-    </p>
-    <button class='btn btn-primary' ui-sref="contact">Hire me !</button>
+    <view-title>{{ 'TEMPLATES.HOME.META_TITLE' | translate }}</view-title>
+    <h1 translate>TEMPLATES.HOME.TITLE</h1>
+    <div class="lead" btf-markdown="'TEMPLATES.HOME.INTRO' | translate"></div>
+    <button class='btn btn-primary' ui-sref="contact" translate>TEMPLATES.HOME.CONTACT_BTN</button>
   </div>
 </div>
 <div ng-include src="'partials/footer.html'"></div>

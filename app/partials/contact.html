@@ -1,20 +1,23 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container contact">
-    <h1>Say hello!</h1>
-    <p >
-        I'm currently looking some new projects to took part in.<br>
-        I'm particuraly interested in projects that meet one or more of the following aspects/topics.
-    </p>
+    <h1 translate view-title>TEMPLATES.CONTACT.TITLE</h1>
+    <p translate>TEMPLATES.CONTACT.INTRO</p>
     <ul class="list-unstyled aspects">
-        <li class="list-item-with-icon"><i class="ion-pull-request"></i> Open Source</li>
-        <li class="list-item-with-icon"><i class="ion-ios7-people"></i> Of Public Interest</li>
-        <li class="list-item-with-icon"><i class="ion-android-developer"></i> Data Driven Journalism</li>
-        <li class="list-item-with-icon"><i class="fa fa-pie-chart"></i> Data Visualization</li>
+        <li class="list-item-with-icon">
+                <i class="ion-pull-request"></i>  <span translate>TEMPLATES.CONTACT.INTERESTS.OSS</span>
+        </li>
+        <li class="list-item-with-icon">
+                <i class="ion-ios7-people"></i>  <span translate>TEMPLATES.CONTACT.INTERESTS.PUB</span>
+        </li>
+        <li class="list-item-with-icon">
+                <i class="ion-android-developer"></i>  <span translate>TEMPLATES.CONTACT.INTERESTS.DDJ</span>
+        </li>
+        <li class="list-item-with-icon">
+                <i class="fa fa-pie-chart"></i> <span translate>TEMPLATES.CONTACT.INTERESTS.VIZ</span>
+        </li>
     </ul>
-    <p>
-        Let me know by <a ng-href="{{ contact.email }}">email</a> if you want me to work
-        at your side or if you have a project you want to realise.
+    <p translate translate-values='{email: contact.email}'>
+        TEMPLATES.CONTACT.CONTACT_ME
     </p>
 </div>
 <div ng-include src="'partials/footer.html'"></div>
-

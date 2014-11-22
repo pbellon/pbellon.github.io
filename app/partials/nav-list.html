@@ -1,4 +1,6 @@
-<li><a class="navbar-brand" ui-sref="home">{{ globals().name }}</a></li>
+<li>
+    <a class="navbar-brand" ui-sref="home">{{ globals().name }}</a>
+</li>
 <li ng-class="{active: $state.includes('projects')}"><a ui-sref="projects.list" translate>TEMPLATES.NAV.PROJECTS</a></li>
 <li ui-sref-active="active"><a ui-sref="contact" translate>TEMPLATES.NAV.CONTACT</a></li>
 <li ui-sref-active="active"><a ui-sref="resume" translate>TEMPLATES.NAV.RESUME</a></li>
@@ -26,3 +28,14 @@
         <i class="fa fa-github"></i>
     </a>
 </li>
+<li class='nav-lang'>
+    <a ng-click="changeLang()">
+        {{ 'TEMPLATES.NAV.CHANGE_LANG' | translate }}&nbsp;
+        <img class="flag"
+             ng-class="{
+                'flag-en': langUsed() == 'fr',
+                'flag-fr': langUsed() == 'en'
+             }"/>
+    </a>
+</li>
+

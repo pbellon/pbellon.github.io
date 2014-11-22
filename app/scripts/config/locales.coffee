@@ -1,6 +1,9 @@
 angular.module('dummPortfolio.config').config [
     '$translateProvider', ($translateProvider)->
-        $translateProvider.translations('en',
+        ########################################################################
+        #                          ENGLISH LOCALES                             #
+        ########################################################################
+        I18N_EN_LOCALES =
             TEMPLATES:
                 NAV:
                     HOME: 'Home'
@@ -10,7 +13,9 @@ angular.module('dummPortfolio.config').config [
                     MY_LINKEDIN_PROFILE: 'My LinkedIn profile'
                     MY_GITHUB_ACCOUNT: 'My GitHub account'
                     MY_TWITTER_ACCOUNT: 'My twitter account'
-                FOOTER: 'This portfolio has been crafted with ♥ thanks to <a href="https://angularjs.org/" rel="nofollow" target="_blank">AngularJS</a> and <a href="http://yeoman.io/" rel="nofollow" target="_blank">Yeoman</a>. Its code is available on <a href="https://github.com/pbellon/dummPortfolio" rel="nofollow" target="_blank">GitHub</a>.'
+                    CHANGE_LANG: 'See this website in French'
+                FOOTER:
+                    DESCRIPTION: 'This portfolio has been crafted with ♥ thanks to <a href="https://angularjs.org/" rel="nofollow" target="_blank">AngularJS</a> and <a href="http://yeoman.io/" rel="nofollow" target="_blank">Yeoman</a>. Its code is available on <a href="https://github.com/pbellon/dummPortfolio" rel="nofollow" target="_blank">GitHub</a>.'
                 PROJECTS:
                     LIST:
                         DETAILS_OF: 'More details about {{ title }}'
@@ -27,6 +32,29 @@ angular.module('dummPortfolio.config').config [
                         GITHUB_OF: 'Github homepage of'
                         PROJECT_GITHUB: 'Project\'s Github'
                         SEE_WEBSITE: 'See {{title}} website'
+                HOME:
+                    META_TITLE: 'Web Engineer'
+                    CONTACT_BTN: 'Hire me!'
+                    TITLE: 'Hey, my name is Pierre Bellon, I\'m a web engineer'
+                    INTRO: '''I love to craft data-driven tools and websites.
+                    I'm confortable with building RESTful API architectures and advanced user
+                    interfaces on <a ui-sref="projects.list" href="index.html#/projects">meaningful projects</a>.
+                    '''
+                CONTACT:
+                    TITLE: 'Say hello!'
+                    INTRO: '''
+                    I'm currently looking some new projects to took part in.<br>
+                    I'm particuraly interested in projects that meet one or more of the following aspects/topics.
+                    '''
+                    CONTACT_ME: '''
+                    Let me know by  <a href='{{ email }}'>email</a> if you want me to work
+                    at your side or if you have a project you want to realise.
+                    '''
+                    INTERESTS:
+                        OSS: 'Open Source'
+                        PUB: 'Of Public Interest'
+                        DDJ: '@:MODELS.TAGS.DDJ'
+                        VIZ: 'Data Visualization'
             MODELS:
                 TAGS:
                     DDJ: 'Data Driven Journalism'
@@ -124,7 +152,162 @@ angular.module('dummPortfolio.config').config [
                         [chart]: https://docs.google.com/spreadsheets/d/1gdxK9hJG9go52RKZxplKyi1aAlKrxKqVFU6w8yXZx5s/pubchart?oid=42127376&format=interactive
                         '''
 
-        )
+        I18N_FR_LOCALES =
+            TEMPLATES:
+                NAV:
+                    HOME: 'Acceuil'
+                    PROJECTS: 'Projets'
+                    CONTACT: 'Contact'
+                    RESUME: 'CV (Anglais)'
+                    MY_LINKEDIN_PROFILE: 'Mon profile LinkedIn'
+                    MY_GITHUB_ACCOUNT: 'Mon profile GitHub'
+                    MY_TWITTER_ACCOUNT: 'Suivez moi sur Twitter'
+                    CHANGE_LANG: 'Voir ce site en Anglais'
+                FOOTER:
+                    DESCRIPTION: 'Ce portfolio a été créé avec ♥ avec <a href="https://angularjs.org/" rel="nofollow" target="_blank">AngularJS</a> et <a href="http://yeoman.io/" rel="nofollow" target="_blank">Yeoman</a>. Son code est disponible sur <a href="https://github.com/pbellon/dummPortfolio" rel="nofollow" target="_blank">GitHub</a>.'
+                PROJECTS:
+                    LIST:
+                        DETAILS_OF: 'Détails de {{ title }}'
+                        INTRO: '''
+                        En temps que développeur à <a target="_blank" rel="nofollow" href="http://jplusplus.org" title="Site web de Journalism++">Journalism++</a>
+                        j'ai travaillé sur de nombreux projets de journalisme de données. Celà m'a fait réalisé le rôle clé des données dans notre monde et
+                        l'importance de savoir les utiliser pour raconter des histoires au pouvoir d'engagements.
+
+                        Voici une partie des projets dans lesquel j'ai eu l'honneur de participé.
+                        '''
+                    DETAIL:
+                        GO_BACK_TO_PROJECTS: 'Retour au projets'
+                        GITHUB_OF: 'Page github de'
+                        PROJECT_GITHUB: 'Projet sur GitHub'
+                        SEE_WEBSITE: 'Voir le site web de {{title}}'
+                HOME:
+                    META_TITLE: 'Ingénieur Web'
+                    CONTACT_BTN: 'Embauchez moi !'
+                    TITLE: 'Je m\'appelle Pierre Bellon, je suis ingénieur web'
+                    INTRO: '''
+                    J'aime fabriquer des outils et sites web pilotés par les donnés.
+                    Je suis à l'aise avec la conception et la réalisation d'architecture
+                    web RESTful et d'interfaces utilisateur avancées sur des
+                    <a ui-sref="projects.list" href="index.html#/projects">projets riches en sens</a>.
+                    '''
+                CONTACT:
+                    TITLE: 'Contactez moi'
+                    INTRO: '''
+                    Je recherche actuellement à participer sur de nouveaux projets. <br>
+                    Je suis particulièrement intéressé dans les projets rejoignant un
+                    ou plusieurs des sujets/aspects suivants.
+                    '''
+                    CONTACT_ME: '''
+                    Je reste joignable par <a href='{{ email }}'>courriel</a> si vous souhaitez que je travail à vos côtés ou réaliser un projet avec ma participation.
+                    '''
+                    INTERESTS:
+                        OSS: 'Open Source'
+                        PUB: 'D\'intérêt public'
+                        DDJ: '@:MODELS.TAGS.DDJ'
+                        VIZ: 'Visualisation de données'
+            MODELS:
+                TAGS:
+                    DDJ: 'Journalisme de données'
+                    VIZ: 'Visualisation'
+                PROJECTS:
+                    1:
+                        TITLE: 'Detective.io'
+                        SUBTITLE: 'Structurez vos enquêtes'
+                        DESCRIPTION: '''
+                        Detective.io est un outil dédié aux enquêtes pilotées par les données.
+                        Sa puissance repose sur la création des données grace à une interface
+                        utilisateur avancée conçue pour facilement relier des données existantes ou non.
+
+                        <i class="fa fa-trophy"></i> Gagnant du prix "Best story on a single topic" des
+                            [Data Journalism Awards 2014][dja] pour l'enquête [Migrants Files][tmf].
+
+                        [dja]: http://www.globaleditorsnetwork.org/programmes/data-journalism-awards/
+                        [tmf]: https://www.detective.io/detective/the-migrants-files/
+                        '''
+                    2:
+                        TITLE: 'SpendingStories'
+                        SUBTITLE: 'Donner du sens aux grands montants'
+                        DESCRIPTION: '''
+                        Que valent **23 milliards** de dollars étasuniens ?
+                        On se doute qu'il s'agit d'un montant d'argent énorme.
+                        Mais énorme *comment* ?<br/>
+                        Et bien avec ce montant, vous pourriez acheter **WhatsApp** ou bien payer seulement **47%** du **budget de la défense du Royaume-Unis**.
+
+                        Les grands montants ou grandes dépenses sont des choses abstraites
+                        où l'on peut difficilement trouver du sens lorsqu'on les sépare
+                        de leur contexte. *SpendingStories* a pour but de redonner du sens
+                        à tous ces grand nombres en les comparant avec des données publiques
+                        comme celle des dépenses étatiques par exemple.
+                        '''
+                    3:
+                        TITLE: 'Arte: World of Work'
+                        SUBTITLE: 'Une étude du monde du travail'
+                        DESCRIPTION: '''
+                        Construite autour d'un sondage ludique, cette application a pour
+                        but de donner aux jeunes européens des outils pour enrichir leur
+                        perception du monde du travail et de situer leur opinions par rapport
+                        aux autres membres de la génération Y.
+                        '''
+                    4:
+                        TITLE: 'Jeu d\'influences - France5'
+                        SUBTITLE: 'Pourrez vous gérer la crise ?'
+                        DESCRIPTION: '''
+                        Ce serious game vous place à la tête de Habinat, une entreprise pionnère de la construction
+                        de maisons écologiques. Votre carrière est un sans-fautes reconnues des autres qui vous
+                        voit comme un entrepreneur talentueux, jusqu'à cette nuit où le corps sans vie de votre bras
+                        droit et ingénieur principal est retrouvé après son suicide.
+
+                        À partir de ce moment vous devez faire face à la tempête médiatiquement qui gronde.
+                        Dans cette tache vous serez aidés par Patrick Luaud, un conseiller en communication,
+                        un "spin doctor".<br/>
+                        Prendez-vous les *bonnes* décisions ?
+
+                        <i class="fa fa-trophy"></i> "Meilleure oeuvre transmédia" du [Liege Web Festival - 2014][LWF]
+                        [LWF]: http://liegewebfest.be/
+                        '''
+                    5:
+                        TITLE: 'Datawrapper'
+                        SUBTITLE: 'La visualisation de données facile'
+                        DESCRIPTION: '''
+                        DataWrapper est un outil permettant de créer simplement des visualisation de données
+                        à partir de données tabulaires (excel, CSV).
+
+                        À partir d'un simple copier-coller depuis
+                        votre tableur vous pourrez créer des visualisations *efficaces* et *justes* afin
+                        de pouvoir les insérer sur votre site web/vos articles.
+                        '''
+                    6:
+                        TITLE: 'Tractatus Tree'
+                        SUBTITLE: 'Visualiser la phiolosophie'
+                        DESCRIPTION: '''
+                        Ce projet est une expérimentation personnelle sur la façon dont
+                        nous pouvons utiliser des outils pilotés par les données comme [D3.js][d3]
+                        afin d'explorer des oeuvre philosophiques telle que le Tractatus Logico Philosophicus
+                        (Logisch-Philosophische Abhandlung de son titre original).
+
+                        Ce livre publié en 1921 est écrit par Ludwig Wittgenstein, philosophe logicien du 20ème siècle.
+                        Ses propositions numérotées suivent une structure en arbre (1, puis 1.1, 1.2 etc.)
+                        ce qui me fit penser que celles-ci pouvaient facilement être visualisées.
+
+                        [d3]: http://d3js.org/
+                        '''
+                    7:
+                        TITLE: 'githubers-audience.py'
+                        SUBTITLE: 'Quelle est l\'audience de votre profile GitHub ?'
+                        DESCRIPTION: '''
+                        Ce projet est un script Python que j'ai créé durant l'écriture
+                        de mon mémoire intitulé *Est-il pertinent pour une entreprise à but
+                        journalistique de mener un projet open-source ?*.
+                        Son principe est de naviguer sur l'ensemble des projets d'un ou plusieurs
+                        utilisateurs de GitHub pour analyser l'audience globale de leurs projets
+                        au sein de la communauté des développeur.
+
+                        [chart]: https://docs.google.com/spreadsheets/d/1gdxK9hJG9go52RKZxplKyi1aAlKrxKqVFU6w8yXZx5s/pubchart?oid=42127376&format=interactive
+                        '''
+
+        $translateProvider.translations('en', I18N_EN_LOCALES)
+        $translateProvider.translations('fr', I18N_FR_LOCALES)
+
         $translateProvider.preferredLanguage 'en'
 
 

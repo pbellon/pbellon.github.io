@@ -53,8 +53,8 @@ angular.module('dummPortfolio.constants').constant 'constants.projects',
             id: 7
             picture: 'images/screenshots/githubers-audience.png'
             thumbnail: 'images/screenshots/githubers-audience.thumb.png'
-            link: 'http://pbellon.github.io/tractatus-tree/'
-            github: 'https://github.com/jplusplus/arte-world-of-work/'
+            link: 'https://docs.google.com/spreadsheets/d/1gdxK9hJG9go52RKZxplKyi1aAlKrxKqVFU6w8yXZx5s/pubchart?oid=42127376&format=interactive'
+            github: 'https://github.com/pbellon/githubers-audience.py'
             tags: [ 'MODELS.TAGS.VIZ', ]
         }
     ]
