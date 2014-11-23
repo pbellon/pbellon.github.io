@@ -71,6 +71,12 @@ gulp.task('images', function () {
     .pipe($.size());
 });
 
+gulp.task('xml', function(){
+    return gulp.src('app/*.xml')
+               .pipe(gulp.dest('dist'))
+               .pipe($.size());
+})
+
 gulp.task('fonts', function () {
   return gulp.src($.mainBowerFiles())
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
@@ -83,4 +89,4 @@ gulp.task('clean', function () {
   return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.rimraf());
 });
 
-gulp.task('build', ['html', 'partials', 'images', 'fonts']);
+gulp.task('build', ['html', 'partials', 'images', 'fonts', 'xml']);
