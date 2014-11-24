@@ -1,9 +1,9 @@
 <li>
     <a class="navbar-brand" ui-sref="home">{{ globals().name }}</a>
 </li>
-<li ng-class="{active: $state.includes('projects')}"><a ui-sref="projects.list" translate>TEMPLATES.NAV.PROJECTS</a></li>
-<li ui-sref-active="active"><a ui-sref="contact" translate>TEMPLATES.NAV.CONTACT</a></li>
-<li ui-sref-active="active"><a ui-sref="resume" translate>TEMPLATES.NAV.RESUME</a></li>
+<li ng-class="{active: $state.includes('portfolio.projects')}"><a ui-sref="portfolio.projects.list" translate>TEMPLATES.NAV.PROJECTS</a></li>
+<li ui-sref-active="active"><a ui-sref="portfolio.contact" translate>TEMPLATES.NAV.CONTACT</a></li>
+<li ui-sref-active="active"><a ui-sref="portfolio.resume" translate>TEMPLATES.NAV.RESUME</a></li>
 <li class="nav-socials first">
     <a  href="https://twitter.com/Toutenrab"
         rel="nofollow"
@@ -29,7 +29,7 @@
     </a>
 </li>
 <li class='nav-lang'>
-    <a ng-click="changeLang()">
+    <a ng-href="{{ changeLangURL }}">
         {{ 'TEMPLATES.NAV.CHANGE_LANG' | translate }}&nbsp;
         <img class="flag"
              ng-class="{

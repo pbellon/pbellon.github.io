@@ -2,17 +2,23 @@ angular.module('dummPortfolio.config').config [
     '$stateProvider'
     '$urlRouterProvider'
     ($stateProvider, $urlRouterProvider)->
-        $stateProvider.state('home',
-            url: '/home'
+
+        $stateProvider.state('portfolio',
+            url: '/{locale}'
+            abstract: true
+            template: '<div ui-view></div>'
+        )
+        .state('portfolio.home',
+            url: ''
             templateUrl: 'partials/home.html'
             controller: 'HomeCtrl'
         )
-        .state('contact'
+        .state('portfolio.contact'
             url: '/contact'
             templateUrl: 'partials/contact.html'
             controller: 'ContactCtrl as contact'
         )
-        .state('projects'
+        .state('portfolio.projects'
             template: '<div ui-view></div>'
             url: '/projects'
             abstract: true
@@ -27,12 +33,12 @@ angular.module('dummPortfolio.config').config [
                     do wrapper.wrapList
                 ]
         )
-        .state('projects.list'
+        .state('portfolio.projects.list'
             url: '?tags'
             templateUrl: 'partials/projects.list.html'
             controller: 'ProjectListCtrl as projects'
         )
-        .state('projects.detail'
+        .state('portfolio.projects.detail'
             url: '/:id'
             templateUrl: 'partials/projects.detail.html'
             controller: 'ProjectDetailCtrl as project'
@@ -40,10 +46,10 @@ angular.module('dummPortfolio.config').config [
                 project: (projects, $stateParams)->
                     _.findWhere(projects, id: parseInt $stateParams.id)
         )
-        .state('resume',
+        .state('portfolio.resume',
             url: '/resume'
             controller: 'ResumeCtrl'
             templateUrl: 'partials/resume.html'
         )
-        $urlRouterProvider.otherwise('/home')
+        $urlRouterProvider.otherwise('/en')
 ]

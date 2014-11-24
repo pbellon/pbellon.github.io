@@ -1,49 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
    <url>
-      <loc>http://pbellon.github.io/#/home</loc>
-      <changefreq>yearly</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/projects</loc>
+      <loc>http://pbellon.github.io/#/en/home</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/home"/>
       <changefreq>monthly</changefreq>
    </url>
+
    <url>
-      <loc>http://pbellon.github.io/#/projects/1</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/projects/2</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/projects/3</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/projects/4</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/projects/5</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/projects/6</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/projects/7</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/contact</loc>
-      <changefreq>never</changefreq>
-   </url>
-   <url>
-      <loc>http://pbellon.github.io/#/resume</loc>
-      <changefreq>yearly</changefreq>
+      <loc>http://pbellon.github.io/#/fr/home</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/home"/>
+      <changefreq>monthly</changefreq>
    </url>
 
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/projects"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/projects"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects/1</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/project/"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects/1</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/project/"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects/2</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects/2</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects/3</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects/3</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects/4</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects/4</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects/5</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects/5</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects/6</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects/6</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/projects/7</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/projects/7</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/project"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/contact</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/contact"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/contact</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/contact"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/en/resume</loc>
+      <xhtml:link rel="alternate" hreflang="fr" href="http://pbellon.github.io/#/fr/resume"/>
+      <changefreq>monthly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://pbellon.github.io/#/fr/resume</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="http://pbellon.github.io/#/en/resume"/>
+      <changefreq>monthly</changefreq>
+   </url>
 </urlset>

@@ -1,14 +1,15 @@
-angular.module('dummPortfolio.config').run [ '$rootScope', '$location', '$translate', ($rootScope, $location, $translate)->
-    $rootScope.$on '$stateChangeSuccess', ->
-        lang = $location.search().lang
-        if $location.search().hasOwnProperty 'lang'
+angular.module('dummPortfolio.config').run [
+    '$rootScope'
+    '$state'
+    '$translate'
+    '$location'
+    ($rootScope, $state, $translate, $location)->
+        $rootScope.$on '$stateChangeSuccess', (ev, toState, toParams) ->
+            lang = toParams.locale
+            changeLang = 'en'
             $translate.use(lang)
-        else
-            $location.search lang:$translate.use()
-
-
-
-    $rootScope.$on 'lang:changed', (e, lang)->
-        $rootScope.lang = lang
-        $location.search(lang: lang)
+            changeLang = 'fr' if lang is 'en'
+            $rootScope.changeLang = changeLang
+            $rootScope.changeLangURL = $location.absUrl().replace(lang, changeLang)
+            return
 ]
