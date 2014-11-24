@@ -1,8 +1,9 @@
 angular.module('dummPortfolio.config').config [
     '$stateProvider'
     '$urlRouterProvider'
-    ($stateProvider, $urlRouterProvider)->
-
+    '$locationProvider'
+    ($stateProvider, $urlRouterProvider, $locationProvider)->
+        $locationProvider.hashPrefix '!'
         $stateProvider.state('portfolio',
             url: '/{locale}'
             abstract: true
