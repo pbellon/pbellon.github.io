@@ -13,7 +13,7 @@ angular.module('dummPortfolio.config').config [
                     MY_LINKEDIN_PROFILE: 'My LinkedIn profile'
                     MY_GITHUB_ACCOUNT: 'My GitHub account'
                     MY_TWITTER_ACCOUNT: 'My twitter account'
-                    CHANGE_LANG: 'See this website in French'
+                    CHANGE_LANG: 'Voir ce site en Français'
                 FOOTER:
                     DESCRIPTION: 'This portfolio has been crafted with ♥ thanks to <a href="https://angularjs.org/" rel="nofollow" target="_blank">AngularJS</a> and <a href="http://yeoman.io/" rel="nofollow" target="_blank">Yeoman</a>. Its code is available on <a href="https://github.com/pbellon/dummPortfolio" rel="nofollow" target="_blank">GitHub</a>.'
                 PROJECTS:
@@ -30,15 +30,15 @@ angular.module('dummPortfolio.config').config [
                     DETAIL:
                         GO_BACK_TO_PROJECTS: 'Go back to projects'
                         GITHUB_OF: 'Github homepage of'
-                        PROJECT_GITHUB: 'Project\'s Github'
+                        PROJECT_GITHUB: 'See it on Github'
                         SEE_WEBSITE: 'See {{title}} website'
                 HOME:
                     META_TITLE: 'Web Engineer'
                     CONTACT_BTN: 'Hire me!'
-                    TITLE: 'Hey, my name is Pierre Bellon, I\'m a web engineer'
+                    TITLE: 'I\'m Pierre Bellon, I\'m a web engineer'
                     INTRO: '''I love to craft data-driven tools and websites.
                     I'm confortable with building RESTful API architectures and advanced user
-                    interfaces on <a ui-sref="projects.list" href="index.html#/projects">meaningful projects</a>.
+                    interfaces on <a href="#!/en/projects">meaningful projects</a>.
                     '''
                 CONTACT:
                     TITLE: 'Say hello!'
@@ -162,7 +162,7 @@ angular.module('dummPortfolio.config').config [
                     MY_LINKEDIN_PROFILE: 'Mon profile LinkedIn'
                     MY_GITHUB_ACCOUNT: 'Mon profile GitHub'
                     MY_TWITTER_ACCOUNT: 'Suivez moi sur Twitter'
-                    CHANGE_LANG: 'Voir ce site en Anglais'
+                    CHANGE_LANG: 'See this website in English'
                 FOOTER:
                     DESCRIPTION: 'Ce portfolio a été créé avec ♥ avec <a href="https://angularjs.org/" rel="nofollow" target="_blank">AngularJS</a> et <a href="http://yeoman.io/" rel="nofollow" target="_blank">Yeoman</a>. Son code est disponible sur <a href="https://github.com/pbellon/dummPortfolio" rel="nofollow" target="_blank">GitHub</a>.'
                 PROJECTS:
@@ -178,7 +178,7 @@ angular.module('dummPortfolio.config').config [
                     DETAIL:
                         GO_BACK_TO_PROJECTS: 'Retour au projets'
                         GITHUB_OF: 'Page github de'
-                        PROJECT_GITHUB: 'Projet sur GitHub'
+                        PROJECT_GITHUB: 'Voir sur GitHub'
                         SEE_WEBSITE: 'Voir le site web de {{title}}'
                 HOME:
                     META_TITLE: 'Ingénieur Web'
@@ -188,7 +188,7 @@ angular.module('dummPortfolio.config').config [
                     J'aime fabriquer des outils et sites web pilotés par les donnés.
                     Je suis à l'aise avec la conception et la réalisation d'architecture
                     web RESTful et d'interfaces utilisateur avancées sur des
-                    <a ui-sref="projects.list" href="index.html#/projects">projets riches en sens</a>.
+                    <a href="#!/fr/projects">projets à visée démocratiques</a>.
                     '''
                 CONTACT:
                     TITLE: 'Contactez moi'
