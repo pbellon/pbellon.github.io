@@ -18,6 +18,7 @@ angular.module('dummPortfolio.config').config [
                     DESCRIPTION: 'This portfolio has been crafted with ♥ thanks to <a href="https://angularjs.org/" rel="nofollow" target="_blank">AngularJS</a> and <a href="http://yeoman.io/" rel="nofollow" target="_blank">Yeoman</a>. Its code is available on <a href="https://github.com/pbellon/dummPortfolio" rel="nofollow" target="_blank">GitHub</a>.'
                 PROJECTS:
                     LIST:
+                        TITLE: 'Projects'
                         DETAILS_OF: 'More details about {{ title }}'
                         INTRO: '''
                         As a developer at <a target="_blank" rel="nofollow" href="http://jplusplus.org" title="Journalism++ website">Journalism++</a> I worked
@@ -66,8 +67,8 @@ angular.module('dummPortfolio.config').config [
                         SUBTITLE: 'Structure your investigations'
                         DESCRIPTION: '''
                         Detective.io is a tool dedicated to data-driven investigations.
-                        Its power lies in data creation for users thanks
-                        to an advanced interface designed to easily connect related data.
+                        Its power lies in an advanced interface designed to design, collect & visualize
+                        complex data like social networks data.
 
                         <i class="fa fa-trophy"></i> Winner of the "Best story on a single topic" award of [Data Journalism Awards 2014][dja] for the [Migrants Files][tmf] investigation.
 
@@ -167,13 +168,14 @@ angular.module('dummPortfolio.config').config [
                     DESCRIPTION: 'Ce portfolio a été créé avec ♥ avec <a href="https://angularjs.org/" rel="nofollow" target="_blank">AngularJS</a> et <a href="http://yeoman.io/" rel="nofollow" target="_blank">Yeoman</a>. Son code est disponible sur <a href="https://github.com/pbellon/dummPortfolio" rel="nofollow" target="_blank">GitHub</a>.'
                 PROJECTS:
                     LIST:
+                        TITLE: 'Projets'
                         DETAILS_OF: 'Détails de {{ title }}'
                         INTRO: '''
                         En temps que développeur à <a target="_blank" rel="nofollow" href="http://jplusplus.org" title="Site web de Journalism++">Journalism++</a>
-                        j'ai travaillé sur de nombreux projets de journalisme de données. Celà m'a fait réalisé le rôle clé des données dans notre monde et
-                        l'importance de savoir les utiliser pour raconter des histoires au pouvoir d'engagements.
+                        j'ai travaillé sur de nombreux projets de journalisme de données. J'ai pris alors conscience du rôle clé des données dans nos sociétés et
+                        et du subtile équilibre pour les employer dans des contenus éditoriaux à volonté démocratique.
 
-                        Voici une partie des projets dans lesquel j'ai eu l'honneur de participé.
+                        Voici une partie des projets dans lesquels j'ai eu l'honneur de participer.
                         '''
                     DETAIL:
                         GO_BACK_TO_PROJECTS: 'Retour au projets'
@@ -215,8 +217,8 @@ angular.module('dummPortfolio.config').config [
                         SUBTITLE: 'Structurez vos enquêtes'
                         DESCRIPTION: '''
                         Detective.io est un outil dédié aux enquêtes pilotées par les données.
-                        Sa puissance repose sur la création des données grace à une interface
-                        utilisateur avancée conçue pour facilement relier des données existantes ou non.
+                        Sa puissance repose sur son interface évoluée permettant de concevoir, collecter et
+                        visualiser des données complexes telle que peuvent l'être les données sociales en réseau.
 
                         <i class="fa fa-trophy"></i> Gagnant du prix "Best story on a single topic" des
                             [Data Journalism Awards 2014][dja] pour l'enquête [Migrants Files][tmf].
@@ -250,12 +252,11 @@ angular.module('dummPortfolio.config').config [
                         '''
                     4:
                         TITLE: 'Jeu d\'influences - France5'
-                        SUBTITLE: 'Pourrez vous gérer la crise ?'
+                        SUBTITLE: 'La gestion de crise dont vous êtes le "héros"'
                         DESCRIPTION: '''
                         Ce serious game vous place à la tête de Habinat, une entreprise pionnère de la construction
-                        de maisons écologiques. Votre carrière est un sans-fautes reconnues des autres qui vous
-                        voit comme un entrepreneur talentueux, jusqu'à cette nuit où le corps sans vie de votre bras
-                        droit et ingénieur principal est retrouvé après son suicide.
+                        de maisons écologiques. Votre carrière est un sans-fautes reconnue des autres. Jusqu'à cette nuit
+                        où le corps sans vie de votre bras droit et ingénieur principal est retrouvé après son suicide.
 
                         À partir de ce moment vous devez faire face à la tempête médiatiquement qui gronde.
                         Dans cette tache vous serez aidés par Patrick Luaud, un conseiller en communication,
@@ -267,7 +268,7 @@ angular.module('dummPortfolio.config').config [
                         '''
                     5:
                         TITLE: 'Datawrapper'
-                        SUBTITLE: 'La visualisation de données facile'
+                        SUBTITLE: 'Les visualisations de données à portée de main'
                         DESCRIPTION: '''
                         DataWrapper est un outil permettant de créer simplement des visualisation de données
                         à partir de données tabulaires (excel, CSV).
@@ -278,7 +279,7 @@ angular.module('dummPortfolio.config').config [
                         '''
                     6:
                         TITLE: 'Tractatus Tree'
-                        SUBTITLE: 'Visualiser la phiolosophie'
+                        SUBTITLE: 'Visualisation de données phiolosophiques'
                         DESCRIPTION: '''
                         Ce projet est une expérimentation personnelle sur la façon dont
                         nous pouvons utiliser des outils pilotés par les données comme [D3.js][d3]
@@ -293,7 +294,7 @@ angular.module('dummPortfolio.config').config [
                         '''
                     7:
                         TITLE: 'githubers-audience.py'
-                        SUBTITLE: 'Quelle est l\'audience de votre profile GitHub ?'
+                        SUBTITLE: 'L\'audience de votre profil GitHub'
                         DESCRIPTION: '''
                         Ce projet est un script Python que j'ai créé durant l'écriture
                         de mon mémoire intitulé *Est-il pertinent pour une entreprise à but
