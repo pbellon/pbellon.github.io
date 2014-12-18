@@ -1,7 +1,8 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container projects">
     <view-title>Project list</view-title>
-    <div btf-markdown="'TEMPLATES.PROJECTS.LIST.INTRO' | translate"></div>
+    <h1>{{ 'TEMPLATES.PROJECTS.LIST.TITLE' | translate }}</h1>
+    <div class="intro" btf-markdown="'TEMPLATES.PROJECTS.LIST.INTRO' | translate"></div>
     <div class="row">
         <div class='col-sm-12 tag-list tag-list--selected' ng-show="projects.hasSelectedTags()">
             <span ng-repeat="tag in projects.selectedTags" class="label label-default tag-list__item">
@@ -13,12 +14,12 @@
                  ng-repeat="project in projects.filteredProjects()"
                  ng-init="details_of_project = ('TEMPLATES.PROJECTS.LIST.DETAILS_OF'|translate:'{title: (project.title()|translate)}')">
                 <h5>
-                    <a ng-attr-title="{{ details_of_project }}" ui-sref="projects.detail({id: project.id})" translate>{{ project.title() }}</a>
+                    <a ng-attr-title="{{ details_of_project }}" ui-sref="portfolio.projects.detail({id: project.id})" translate>{{ project.title() }}</a>
                 </h5>
                 <h6 translate="{{ project.subtitle() }}"></h6>
 
                 <div class="projects__list__item__thumbnail thumbnail">
-                    <a ng-attr-title='{{details_of_project}}' ui-sref="projects.detail({id: project.id})">
+                    <a ng-attr-title='{{details_of_project}}' ui-sref="portfolio.projects.detail({id: project.id})">
                         <img ng-src="{{ project.thumbnail }}"/>
                     </a>
                 </div>

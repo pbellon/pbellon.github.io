@@ -6,9 +6,17 @@
 }
 p {
     font-size: 17px;
+    margin-bottom: 24px;
+    line-height: 24px;
+    @media(max-width: @screen-xs-max){
+        margin-bottom: 12px;
+    }
+}
+.intro {
+    margin-top: 0;
 }
 .lead p {
-    margin-bottom: 0;
+    // margin-bottom: 0;
 }
 .thumb-icon {
     font-size: 22px;
@@ -59,4 +67,9 @@ p {
     background:      -o-linear-gradient(right,    @from, @to); /*Opera 11.1-12*/
     background:    -moz-linear-gradient(right,    @from, @to); /*Fx 3.6-15*/
     background:         linear-gradient(to right, @from, @to);
+}
+
+
+.text-centered {
+    text-align: center;
 }
