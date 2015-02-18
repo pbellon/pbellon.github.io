@@ -1,0 +1,41 @@
+<li>
+    <a class="navbar-brand" ui-sref="portfolio.home">{{ globals().name }}</a>
+</li>
+<li ng-class="{active: $state.includes('portfolio.projects')}"><a ui-sref="portfolio.projects.list" translate>TEMPLATES.NAV.PROJECTS</a></li>
+<!-- <li ui-sref-active="active"><a ui-sref="portfolio.contact" translate>TEMPLATES.NAV.CONTACT</a></li> -->
+<li ui-sref-active="active"><a ui-sref="portfolio.resume" translate>TEMPLATES.NAV.RESUME</a></li>
+<li class="nav-socials first">
+    <a  href="https://twitter.com/Toutenrab"
+        rel="nofollow"
+        target="_blank"
+        ng-attr-title="{{ 'TEMPLATES.NAV.MY_TWITTER_ACCOUNT' | translate }}">
+        <i class="fa fa-twitter"></i>
+    </a>
+</li>
+<li class="nav-socials">
+    <a  ng-href="https://www.linkedin.com/profile/view?id={{ globals().linkedin }}"
+        rel="nofollow"
+        target="_blank"
+        ng-attr-title="{{ 'TEMPLATES.NAV.MY_LINKEDIN_PROFILE' | translate }}">
+        <i class="fa fa-linkedin"></i>
+    </a>
+</li>
+<li class="nav-socials">
+    <a  ng-href="https://github.com/{{ globals().github }}"
+        rel="nofollow"
+        target="_blank"
+        ng-attr-title="{{ 'TEMPLATES.NAV.MY_GITHUB_ACCOUNT' | translate }}">
+        <i class="fa fa-github"></i>
+    </a>
+</li>
+<li class='nav-lang'>
+    <a ng-href="{{ changeLangURL }}">
+        {{ 'TEMPLATES.NAV.CHANGE_LANG' | translate }}&nbsp;
+        <img class="flag"
+             ng-class="{
+                'flag-en': langUsed() == 'fr',
+                'flag-fr': langUsed() == 'en'
+             }"/>
+    </a>
+</li>
+

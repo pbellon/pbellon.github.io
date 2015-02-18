@@ -1,38 +1,32 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container projects">
-    <p class="lead">
-        As a developer at <a href="http://jplusplus.org">Journalism++</a> I work
-        on many data-driven journalism projects. It made me realise the key role
-        of data in our world and the importance of using it to tell engaging
-        stories.
-    </p>
-
-    <p class="lead">
-        Here are some projects I proudly took part in.
-    </p>
+    <view-title>Project list</view-title>
+    <h1>{{ 'TEMPLATES.PROJECTS.LIST.TITLE' | translate }}</h1>
+    <div class="intro" btf-markdown="'TEMPLATES.PROJECTS.LIST.INTRO' | translate"></div>
     <div class="row">
         <div class='col-sm-12 tag-list tag-list--selected' ng-show="projects.hasSelectedTags()">
             <span ng-repeat="tag in projects.selectedTags" class="label label-default tag-list__item">
-                {{ tag }} <a class='tag-list__item__remove-btn' ng-click="projects.unselectTag(tag)"><i class="fa fa-close"></i></a>
+                {{ tag | translate}} <a class='tag-list__item__remove-btn' ng-click="projects.unselectTag(tag)"><i class="fa fa-close"></i></a>
             </span>
         </div>
         <div class="projects__list">
             <div class='col-sm-4 projects__list__item'
-                 ng-repeat="project in projects.filteredProjects()">
-                <h3>
-                    <a ui-sref="projects.detail({id: project.id})">{{ project.title }}</a>
-                </h3>
-                <h5>{{ project.subtitle }}</h5>
+                 ng-repeat="project in projects.filteredProjects()"
+                 ng-init="details_of_project = ('TEMPLATES.PROJECTS.LIST.DETAILS_OF'|translate:'{title: (project.title()|translate)}')">
+                <h5>
+                    <a ng-attr-title="{{ details_of_project }}" ui-sref="portfolio.projects.detail({id: project.id})" translate>{{ project.title() }}</a>
+                </h5>
+                <h6 translate="{{ project.subtitle() }}"></h6>
 
                 <div class="projects__list__item__thumbnail thumbnail">
-                    <a ui-sref="projects.detail({id: project.id})">
+                    <a ng-attr-title='{{details_of_project}}' ui-sref="portfolio.projects.detail({id: project.id})">
                         <img ng-src="{{ project.thumbnail }}"/>
                     </a>
                 </div>
                 <div class="projects__list__project__tags tag-list">
                     <span ng-repeat="tag in project.tags"
                           class="label label-primary tag-list__item"
-                          ng-click="projects.selectTag(tag)">{{ tag }}
+                          ng-click="projects.selectTag(tag)" translate>{{ tag }}
                     </span>&nbsp;
                 </div>
             </div>

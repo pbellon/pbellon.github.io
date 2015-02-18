@@ -1,10 +1,23 @@
 <div ng-include src="'partials/nav.html'"></div>
-<div class="container">
-    <h1>Contact</h1>
-    <p>
-        I'm available for hire. If you want other informations or to set up an
-        interview please let be know by <a ng-href="{{ email }}">mail</a>
+<div class="container contact">
+    <h1 translate view-title>TEMPLATES.CONTACT.TITLE</h1>
+    <p translate>TEMPLATES.CONTACT.INTRO</p>
+    <ul class="list-unstyled aspects">
+        <li class="list-item-with-icon">
+                <i class="ion-pull-request"></i>  <span translate>TEMPLATES.CONTACT.INTERESTS.OSS</span>
+        </li>
+        <li class="list-item-with-icon">
+                <i class="ion-ios7-people"></i>  <span translate>TEMPLATES.CONTACT.INTERESTS.PUB</span>
+        </li>
+        <li class="list-item-with-icon">
+                <i class="ion-android-developer"></i>  <span translate>TEMPLATES.CONTACT.INTERESTS.DDJ</span>
+        </li>
+        <li class="list-item-with-icon">
+                <i class="fa fa-pie-chart"></i> <span translate>TEMPLATES.CONTACT.INTERESTS.VIZ</span>
+        </li>
+    </ul>
+    <p translate translate-values='{email: contact.email}'>
+        TEMPLATES.CONTACT.CONTACT_ME
     </p>
 </div>
 <div ng-include src="'partials/footer.html'"></div>
-

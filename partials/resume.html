@@ -1,0 +1,91 @@
+<div class="hidden-print" ng-include src="'partials/nav.html'"></div>
+<div class="container resume">
+    <div class="visible-print-block intro row">
+        <div class="pull-left resume__title-block">
+            <h1 class="resume__title" view-title>Pierre Bellon<br/><small>Web Engineer</small></h1>
+            <!-- <h2 class="resume__subtitle">Web Engineer</h2> -->
+        </div>
+        <div class="pull-left resume__personal-info">
+            <ul class="list-unstyled">
+                <li>
+                    <a ng-href="{{ mailtoEmail }}" rel="nofollow">
+                        <i class="fa fa-envelope"></i>&nbsp;{{ email }}
+                    </a>
+                </li>
+                <li>
+                    <a ng-href="https://twitter.com/{{ twitter }}" rel="nofollow">
+                    <i class="fa fa-at"></i>&nbsp; {{twitter}}
+                </li>
+                <li>
+                    <a ng-href="https://github.com/{{ github }}" rel="nofollow"><i class="fa fa-github"></i>&nbsp; github.com/{{ github }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="resume__section">
+        <p>
+            I'm a web engineer with a strong experience with <strong>AngularJS</strong> (JavaScript) and <strong>Django</strong> (Python). During my last job at Journalism++ I discovered data-driven journalism, it was an eye-opening experience: it made me discover why and how we should combine the principles of IT engineering, journalism and information design to tell engaging stories for the benifit of the public and the community.
+        </p>
+    </div>
+    <div class="resume__section" id='education'>
+        <div class="resume__section__title"><h2>Education</h2></div>
+        <div class="resume__section__content">
+            <ul class='list-unstyled row'>
+                <li ng-repeat="education in resume.education" class='education col-xs-4'>
+                    <h5>
+                        <strong>{{ education.name }}</strong>
+                        <small>{{ education.years.join('-') }}</small>
+                    </h5>
+                    <div class="education__cursus">
+                            {{ education.cursus }}
+                            <em ng-if="education.option"><br/>{{ education.option }}</em>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="resume__section">
+        <div class="resume__section__title"><h2>Experience</h2></div>
+        <div class="resume__section__content">
+            <div class="experience" ng-repeat="job in resume.jobs">
+                <h5 class="job__title">
+                    <strong class="job__title__company">{{ job.title }}</strong>&nbsp;
+                    <small class="job__title__job">{{ job.company }}&nbsp;(<span class="job__years">{{ job.years.join('-') }}, <em>{{job.duration}}</em></span>)</small>
+                </h5>
+                <p class="job__description" btf-markdown="job.description"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume__section" id="skills">
+        <div class="resume__section__title"><h2>Skills</h2></div>
+        <div class="resume__section__content row">
+            <div ng-repeat="skill_category in resume.skills | orderBy:'order'" class="col-xs-4">
+                <h4>{{ skill_category.name }}</h4>
+                <ul class="list-unstyled">
+                    <li class="skill row" ng-repeat="skill in skill_category.skills | orderBy: '-experience'">
+                        <div class="skill__name col-xs-7 small">{{ skill.name }}</div>
+                        <div class="skill__experience col-xs-5" ng-class="'skill__experience--{{skill.experience}}'"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume__section">
+        <div class="resume__section__title"><h2>Interest / Hobbies</h2></div>
+        <div class="resume__section__content">
+            <ul class="list-unstyled interests-list row">
+                <li class="interest col-xs-4"
+                    ng-repeat="interest in resume.interests">
+                        <div class="interest__icon thumb-icon">
+                            <i ng-class="'{{ interest.iconClass }}'"></i>
+                        </div>
+                        <div class="interest__content" btf-markdown="interest.description">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

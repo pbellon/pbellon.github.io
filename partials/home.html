@@ -1,12 +1,20 @@
 <div ng-include src="'partials/nav.html'"></div>
 <div class="container">
-  <div class='profile-photo centered-photo'></div>
-  <div class="text-center">
-    <h1>Hey, my name is Pierre Bellon, I'm a web engineer</h1>
-    <p class="lead">
-      I love to craft data-driven tools and websites. I'm confortable to build complex API and advanced user interfaces on <a ui-sref="projects.list" href="index.html#/projects">meaniful projects</a>.
-    </p>
-    <button class='btn btn-primary' ui-sref="contact">Hire me !</button>
-  </div>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 profile-photo-container">
+          <img class='profile-photo' src="/images/profile-picture.jpg"/>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <view-title>{{ 'TEMPLATES.HOME.META_TITLE' | translate }}</view-title>
+        <h1 translate>TEMPLATES.HOME.TITLE</h1>
+        <div class="lead" btf-markdown="'TEMPLATES.HOME.INTRO' | translate"></div>
+        <!-- <p class="text-centered"> -->
+            <!-- <button class='btn btn-primary' ui-sref="portfolio.projects" translate>TEMPLATES.HOME.PROJECTS_BTN</button> -->
+        <!-- </p> -->
+      </div>
+
+    </div>
+
 </div>
+
 <div ng-include src="'partials/footer.html'"></div>
