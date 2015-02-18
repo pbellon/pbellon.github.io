@@ -14,11 +14,11 @@ angular.module('dummPortfolio.config').config [
             templateUrl: 'partials/home.html'
             controller: 'HomeCtrl'
         )
-        .state('portfolio.contact'
-            url: '/contact'
-            templateUrl: 'partials/contact.html'
-            controller: 'ContactCtrl as contact'
-        )
+        # .state('portfolio.contact'
+        #     url: '/contact'
+        #     templateUrl: 'partials/contact.html'
+        #     controller: 'ContactCtrl as contact'
+        # )
         .state('portfolio.projects'
             template: '<div ui-view></div>'
             url: '/projects'

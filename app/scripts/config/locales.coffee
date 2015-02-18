@@ -35,6 +35,7 @@ angular.module('dummPortfolio.config').config [
                         SEE_WEBSITE: 'See {{title}} website'
                 HOME:
                     META_TITLE: 'Web Engineer'
+                    PROJECTS_BTN: 'See my projects'
                     CONTACT_BTN: 'Hire me!'
                     TITLE: 'I\'m Pierre Bellon, I\'m a web engineer'
                     INTRO: '''I love to craft data-driven tools and websites.
@@ -184,6 +185,7 @@ angular.module('dummPortfolio.config').config [
                         SEE_WEBSITE: 'Voir le site web de {{title}}'
                 HOME:
                     META_TITLE: 'Ingénieur Web'
+                    PROJECTS_BTN: 'Voir mes réalisations'
                     CONTACT_BTN: 'Embauchez moi !'
                     TITLE: 'Je m\'appelle Pierre Bellon, je suis ingénieur web'
                     INTRO: '''
